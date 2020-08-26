@@ -6,6 +6,7 @@ import android.os.Bundle
 import android.util.Log
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
+import com.blogspot.atifsoftwares.animatoolib.Animatoo
 import com.ikaru.twiscode.DataRepository
 import com.ikaru.twiscode.R
 import com.ikaru.twiscode.models.Meal
@@ -86,6 +87,7 @@ class DetailActivity : AppCompatActivity() {
 
     override fun onSupportNavigateUp(): Boolean {
         onBackPressed()
+        Animatoo.animateSlideRight(this)
         return true
     }
 }

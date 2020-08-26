@@ -14,6 +14,7 @@ import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response
 import android.util.Log
+import com.blogspot.atifsoftwares.animatoolib.Animatoo
 import com.chad.library.adapter.base.BaseQuickAdapter
 import com.custom.sliderimage.logic.SliderImage
 import com.ikaru.twiscode.models.Meals
@@ -35,6 +36,7 @@ class MainActivity : AppCompatActivity() {
             intent = Intent(this, DetailActivity::class.java)
             intent.putExtra("Meal",meals.get(position).idMeal)
             startActivity(intent)
+            Animatoo.animateSlideLeft(this)
             true
         }
 
